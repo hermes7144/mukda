@@ -4,14 +4,14 @@ import { Link } from 'react-router-dom';
 import palette from '../../lib/styles/palette';
 
 const buttonStyle = css`
-border: none;
-border-radius: 4px;
-font-size: 1rem;
-font-weight: bold;
-padding: 0.25rem 1rem;
-color: white;
-outline: none;
-cursor: pointer;
+  border: none;
+  border-radius: 4px;
+  font-size: 1rem;
+  font-weight: bold;
+  padding: 0.25rem 1rem;
+  color: white;
+  outline: none;
+  cursor: pointer;
 
   background: ${palette.gray[8]};
   &:hover {
@@ -35,7 +35,12 @@ cursor: pointer;
         background: ${palette.cyan[4]};
       }
     `}
-  `;
+    &:disabled {
+      background: ${palette.gray[3]};
+      color:${palette.gray[5]}
+      cursor: not-allowed;
+    }
+`;
 
 const StyledButton = styled.button`
   ${buttonStyle}
