@@ -1,6 +1,7 @@
+import React from 'react';
 import styled from 'styled-components';
-import Button from '../common/Button';
 import qs from 'qs';
+import Button from '../common/Button';
 
 const PaginationBlock = styled.div`
   width: 320px;
