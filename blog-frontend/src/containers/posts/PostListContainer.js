@@ -22,8 +22,6 @@ const PostListContainer = () => {
     const page = parseInt(searchParams.get('page'), 10) || 1;
     dispatch(listPosts({ tag, username, page }));
   }, [dispatch, searchParams, username]);
-
-  console.log(posts);
   return (
     <PostList
       loading={loading}
