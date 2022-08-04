@@ -11,7 +11,6 @@ const WritePage = () => {
       <Helmet>
         <title>글 작성하기 - REACTERS</title>
       </Helmet>
-
       <EditorContainer />
       <TagBoxContainer />
       <WriteActionButtonsContainer />
