@@ -3,7 +3,6 @@ import styled from 'styled-components';
 import { Link } from 'react-router-dom';
 import Responsive from './Responsive';
 import Button from './Button';
-
 const HeaderBlock = styled.div`
   position: fixed;
   width: 100%;
@@ -50,6 +49,9 @@ const Header = ({ user, onLogout }) => {
           <Link to="/" className="logo">
             REACTERS
           </Link>
+          <Link to="/">HOME</Link>
+          <Link to="/post">POST</Link>
+          <Link to="/">FAQ</Link>
           {user ? (
             <div className="right">
               <UserInfo>{user.username}</UserInfo>
