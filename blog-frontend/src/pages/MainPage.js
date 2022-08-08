@@ -21,11 +21,14 @@ const MainPage = () => {
   const HeaderBlock = styled.div`
     width: 100%;
     height: 500px;
-    background: url('img/main_image.jpg');
+    background: url('img/real_food.jpg');
     background-size: cover;
-
+    backgroundcolor: rgba(0, 0, 0, 0.3);
     h1 {
       color: white;
+      text-align: center;
+      padding-top: 10px;
+      font-size: 50px;
     }
   `;
 
@@ -38,23 +41,38 @@ const MainPage = () => {
   const SubItemBlock = styled.div`
     width: 33%;
     height: 150px;
-    background: yellow;
   `;
 
   return (
     <div>
       <Helmet>
-        <title>REACTERS</title>
+        <title>MUKDA</title>
       </Helmet>
       <HeaderContainer />
       <MainBlock>
-        <HeaderBlock>
-          <h1>걱정없이 맛있는 것을 먹고 살기 위해서!</h1>
-        </HeaderBlock>
+        <HeaderBlock></HeaderBlock>
         <SubBlock>
-          <SubItemBlock>지속적인 삶을 위해서</SubItemBlock>
-          <SubItemBlock>아이들에게 걱정없는 먹거리를</SubItemBlock>
-          <SubItemBlock>현명한 고객이 현명한 기업을 만든다</SubItemBlock>
+          <SubItemBlock>
+            <h4>지속적인 삶을 위해서</h4>
+            <p>
+              dfsdfdsfsdfdsfsf iosdfsdfsdfssdjfiosdjfoi sdjiofsdjfosdjf
+              iosjiofsdfsdfsdfsdfsdf
+            </p>
+          </SubItemBlock>
+          <SubItemBlock>
+            <h4>아이들에게 걱정없는 먹거리를</h4>
+            <p>
+              dfsdfdsfsdfdsfsfiosdfs dfsdfssdjfiosdjfoisd jiofsdjfosdjfiosjiof
+              sdfsdfsdfsdfsdf
+            </p>
+          </SubItemBlock>
+          <SubItemBlock>
+            <h4>현명한 고객이 현명한 기업을 만든다</h4>
+            <p>
+              dfsdfdsfsdfdsfsfio sdfsdfsdfssdjfiosd jfoisdjiofsdjfosdjfios
+              jiofsdfsdfsdfsdfsdf
+            </p>
+          </SubItemBlock>
         </SubBlock>
       </MainBlock>
     </div>

@@ -47,7 +47,7 @@ const Header = ({ user, onLogout }) => {
       <HeaderBlock>
         <Wrapper>
           <Link to="/" className="logo">
-            REACTERS
+            MUKDA
           </Link>
           <Link to="/">HOME</Link>
           <Link to="/post">POST</Link>
