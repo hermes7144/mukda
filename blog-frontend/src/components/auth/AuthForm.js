@@ -56,7 +56,7 @@ const ButtonWithMarginTop = styled(Button)`
 
 const textMap = {
   login: '로그인',
-  register: '회원가입'
+  register: '회원가입',
 };
 
 /**
@@ -101,7 +101,7 @@ const AuthForm = ({ type, form, onChange, onSubmit, error }) => {
           />
         )}
         {error && <ErrorMessage>{error}</ErrorMessage>}
-        <ButtonWithMarginTop cyan fullWidth style={{ marginTop: '1rem' }}>
+        <ButtonWithMarginTop cyan fullWidth>
           {text}
         </ButtonWithMarginTop>
       </form>

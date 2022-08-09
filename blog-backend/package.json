@@ -24,7 +24,7 @@
     "nodemon": "^2.0.19"
   },
   "scripts": {
-    "start": "--host 0.0.0.0 --disableHostCheck true node src -r esm src",
+    "start": "node src -r esm src",
     "start:dev": "nodemon --watch src/ -r esm src/index.js"
   }
 }
